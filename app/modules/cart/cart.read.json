@@ -1,0 +1,54 @@
+{
+  "id": 1,
+  "user_id": 1,
+  "total_items": 4,
+  "total_amount": 4870.95,
+  "is_active": true,
+  "items": [
+    {
+      "id": 101,
+      "product_id": 4,
+      "quantity": 1,
+      "unit_price": 799.99,
+      "unit_selling_price": 735.99,
+      "subtotal": 735.99,
+      "product": {
+        "id": 4,
+        "name": "PlayStation 5 Pro Console",
+        "discount_percent": 8.0,
+        "price": 799.99,
+        "image_url": "https://cdn.example.com/products/ps5-pro/main.jpg"
+      }
+    },
+    {
+      "id": 102,
+      "product_id": 7,
+      "quantity": 2,
+      "unit_price": 1899.99,
+      "unit_selling_price": 1594.99,
+      "subtotal": 3189.98,
+      "product": {
+        "id": 7,
+        "name": "MacBook Pro 16\" M3 Max",
+        "discount_percent": 16.05,
+        "price": 1899.99,
+        "image_url": "https://cdn.example.com/products/macbook-pro-16-m3/max.jpg"
+      }
+    },
+    {
+      "id": 103,
+      "product_id": 9,
+      "quantity": 1,
+      "unit_price": 129.99,
+      "unit_selling_price": 97.49,
+      "subtotal": 97.49,
+      "product": {
+        "id": 9,
+        "name": "Nike Tech Fleece Hoodie",
+        "discount_percent": 25.0,
+        "price": 129.99,
+        "image_url": "https://cdn.example.com/products/nike-tech-fleece-black/main.jpg"
+      }
+    }
+  ]
+}

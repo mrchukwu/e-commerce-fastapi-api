@@ -1,0 +1,430 @@
+
+[
+  {
+  "name": "Dell XPS 15 Laptop",
+  "brand_name": "Dell",
+  "model_no": "XPS15-9530-i7-2024",
+  "description": "Premium 15-inch laptop with Intel Core i7 13th Gen processor, NVIDIA RTX 4060 GPU, and a stunning 3.5K OLED display — perfect for creators and developers.",
+  "warrenty": "2 Years International Warranty",
+  "discount_percent": 12.5,
+  "stock_quantity": 25,
+  "is_active": true,
+  "price": 2199.99,
+  "image_url": "https://cdn.example.com/products/dell-xps-15/main.jpg",
+  "category_id": 1,
+  "additional_images": [
+    "https://cdn.example.com/products/dell-xps-15/side.jpg",
+    "https://cdn.example.com/products/dell-xps-15/keyboard.jpg",
+    "https://cdn.example.com/products/dell-xps-15/ports.jpg"
+  ],
+  "highlights": [
+    "Intel Core i7-13700H 13th Gen Processor",
+    "NVIDIA GeForce RTX 4060 8GB GDDR6",
+    "15.6-inch 3.5K OLED Touch Display",
+    "32GB DDR5 RAM, 1TB NVMe SSD",
+    "Backlit Keyboard with Fingerprint Reader"
+  ],
+  "specification": [
+    {
+      "section": "Performance",
+      "features": [
+        { "name": "Processor", "value": "Intel Core i7-13700H (14 cores, up to 5.0GHz)" },
+        { "name": "GPU", "value": "NVIDIA GeForce RTX 4060 8GB" },
+        { "name": "RAM", "value": "32GB DDR5 4800MHz" },
+        { "name": "Storage", "value": "1TB PCIe NVMe SSD" }
+      ]
+    },
+    {
+      "section": "Display",
+      "features": [
+        { "name": "Screen Size", "value": "15.6 inches" },
+        { "name": "Resolution", "value": "3456 x 2160 (3.5K OLED)" },
+        { "name": "Refresh Rate", "value": "60Hz" },
+        { "name": "Touch", "value": "Yes" }
+      ]
+    },
+    {
+      "section": "Battery & Ports",
+      "features": [
+        { "name": "Battery", "value": "86Wh, up to 12 hours" },
+        { "name": "Ports", "value": "2x Thunderbolt 4, 1x USB-A, HDMI 2.1, SD Card" },
+        { "name": "Weight", "value": "1.86 kg" }
+      ]
+    }
+  ]
+},
+
+  {
+  "name": "iPhone 15 Pro Max",
+  "brand_name": "Apple",
+  "model_no": "A2849-256GB-TITANIUM",
+  "description": "The most advanced iPhone ever — featuring the A17 Pro chip, a 48MP pro camera system with 5x optical zoom, and a lightweight titanium design.",
+  "warrenty": "1 Year AppleCare Limited Warranty",
+  "discount_percent": 5.0,
+  "stock_quantity": 120,
+  "is_active": true,
+  "price": 1199.00,
+  "image_url": "https://cdn.example.com/products/iphone-15-pro-max/main.jpg",
+  "category_id": 2,
+  "additional_images": [
+    "https://cdn.example.com/products/iphone-15-pro-max/back.jpg",
+    "https://cdn.example.com/products/iphone-15-pro-max/camera.jpg",
+    "https://cdn.example.com/products/iphone-15-pro-max/titanium.jpg"
+  ],
+  "highlights": [
+    "A17 Pro chip with 6-core GPU",
+    "48MP Main | 12MP Ultra Wide | 12MP 5x Telephoto",
+    "6.7-inch Super Retina XDR Display",
+    "Titanium frame — lightest Pro Max ever",
+    "USB-C with USB 3 speeds (10Gbps)"
+  ],
+  "specification": [
+    {
+      "section": "Performance",
+      "features": [
+        { "name": "Chipset", "value": "Apple A17 Pro (3nm)" },
+        { "name": "CPU", "value": "6-core (2 performance + 4 efficiency)" },
+        { "name": "GPU", "value": "6-core Apple GPU with hardware ray tracing" },
+        { "name": "RAM", "value": "8GB" }
+      ]
+    },
+    {
+      "section": "Camera",
+      "features": [
+        { "name": "Main", "value": "48MP, f/1.78, sensor-shift OIS" },
+        { "name": "Ultra Wide", "value": "12MP, f/2.2, 120°" },
+        { "name": "Telephoto", "value": "12MP, 5x optical zoom" },
+        { "name": "Front", "value": "12MP TrueDepth with autofocus" },
+        { "name": "Video", "value": "4K Dolby Vision up to 60fps" }
+      ]
+    },
+    {
+      "section": "Battery & Storage",
+      "features": [
+        { "name": "Storage", "value": "256GB NVMe" },
+        { "name": "Battery", "value": "4441 mAh, up to 29 hours video playback" },
+        { "name": "Charging", "value": "USB-C, MagSafe 15W, Qi2" },
+        { "name": "Water Resistance", "value": "IP68" }
+      ]
+    }
+  ]
+},
+
+{
+  "name": "Samsung Neo QLED 4K Smart TV 65\"",
+  "brand_name": "Samsung",
+  "model_no": "QN65QN90CAFXZA-2024",
+  "description": "65-inch Neo QLED 4K Smart TV with Quantum Matrix Technology, Dolby Atmos sound, and a 144Hz refresh rate for an immersive home theatre experience.",
+  "warrenty": "3 Years On-site Warranty",
+  "discount_percent": 18.0,
+  "stock_quantity": 40,
+  "is_active": true,
+  "price": 1799.99,
+  "image_url": "https://cdn.example.com/products/samsung-qn90c-65/main.jpg",
+  "category_id": 3,
+  "additional_images": [
+    "https://cdn.example.com/products/samsung-qn90c-65/side-view.jpg",
+    "https://cdn.example.com/products/samsung-qn90c-65/back-ports.jpg",
+    "https://cdn.example.com/products/samsung-qn90c-65/remote.jpg"
+  ],
+  "highlights": [
+    "Neo QLED 4K with Quantum Matrix Technology",
+    "144Hz refresh rate for smooth gaming",
+    "Dolby Atmos with Object Tracking Sound+",
+    "Anti-glare Ultra Viewing Angle",
+    "SmartThings, Alexa, and Bixby built-in"
+  ],
+  "specification": [
+    {
+      "section": "Display",
+      "features": [
+        { "name": "Screen Size", "value": "65 inches" },
+        { "name": "Resolution", "value": "3840 x 2160 (4K UHD)" },
+        { "name": "Panel Type", "value": "Neo QLED (Mini LED)" },
+        { "name": "Refresh Rate", "value": "144Hz" },
+        { "name": "HDR", "value": "HDR10+, HLG, Quantum HDR 32x" }
+      ]
+    },
+    {
+      "section": "Audio",
+      "features": [
+        { "name": "Speakers", "value": "4.2.2 channel, 60W" },
+        { "name": "Audio Tech", "value": "Dolby Atmos, Object Tracking Sound+" },
+        { "name": "Q-Symphony", "value": "Yes (with Samsung soundbars)" }
+      ]
+    },
+    {
+      "section": "Connectivity & Smart Features",
+      "features": [
+        { "name": "HDMI", "value": "4x HDMI 2.1 (4K@144Hz)" },
+        { "name": "USB", "value": "2x USB-A, 1x USB-C" },
+        { "name": "Wireless", "value": "Wi-Fi 6E, Bluetooth 5.2" },
+        { "name": "OS", "value": "Tizen Smart TV (2024)" },
+        { "name": "Voice Assistants", "value": "Alexa, Bixby, Google Assistant ready" }
+      ]
+    }
+  ]
+},
+{
+  "name": "PlayStation 5 Pro Console",
+  "brand_name": "Sony",
+  "model_no": "CFI-7000B-2TB-2024",
+  "description": "The most powerful PlayStation ever — featuring an upgraded GPU for 8K gaming, advanced ray tracing, and AI-driven upscaling (PSSR). Includes a 2TB SSD and the new DualSense Edge controller.",
+  "warrenty": "2 Years Sony Limited Warranty",
+  "discount_percent": 8.0,
+  "stock_quantity": 55,
+  "is_active": true,
+  "price": 799.99,
+  "image_url": "https://cdn.example.com/products/ps5-pro/main.jpg",
+  "category_id": 4,
+  "additional_images": [
+    "https://cdn.example.com/products/ps5-pro/vertical.jpg",
+    "https://cdn.example.com/products/ps5-pro/ports.jpg",
+    "https://cdn.example.com/products/ps5-pro/controller.jpg"
+  ],
+  "highlights": [
+    "Upgraded RDNA GPU for 8K output",
+    "Advanced ray tracing with 3x performance",
+    "2TB custom NVMe SSD",
+    "AI-driven PSSR upscaling",
+    "Includes DualSense Edge controller"
+  ],
+  "specification": [
+    {
+      "section": "Performance",
+      "features": [
+        { "name": "CPU", "value": "8x Zen 2 cores @ 3.85GHz" },
+        { "name": "GPU", "value": "RDNA 3, 16.7 TFLOPs" },
+        { "name": "RAM", "value": "16GB GDDR6 + 2GB DDR5" },
+        { "name": "Storage", "value": "2TB custom NVMe SSD" }
+      ]
+    },
+    {
+      "section": "Media & Output",
+      "features": [
+        { "name": "Max Resolution", "value": "8K @ 60Hz / 4K @ 120Hz" },
+        { "name": "Ray Tracing", "value": "Hardware accelerated, 3x faster" },
+        { "name": "Disc Drive", "value": "4K UHD Blu-ray (optional)" }
+      ]
+    },
+    {
+      "section": "Connectivity",
+      "features": [
+        { "name": "HDMI", "value": "1x HDMI 2.1" },
+        { "name": "USB", "value": "2x USB-A, 1x USB-C" },
+        { "name": "Wireless", "value": "Wi-Fi 7, Bluetooth 5.3" }
+      ]
+    }
+  ]
+},
+{
+  "name": "Nike Sportswear Tech Fleece Hoodie",
+  "brand_name": "Nike",
+  "model_no": "FB7922-010-BLK-2024",
+  "description": "Premium Tech Fleece hoodie offering lightweight warmth without the bulk. Features a double-sided spacer fabric for insulation, a zippered utility pocket, and a relaxed fit perfect for everyday wear.",
+  "warrenty": "6 Months Manufacturing Warranty",
+  "discount_percent": 25.0,
+  "stock_quantity": 150,
+  "is_active": true,
+  "price": 129.99,
+  "image_url": "https://cdn.example.com/products/nike-tech-fleece-black/main.jpg",
+  "category_id": 5,
+  "additional_images": [
+    "https://cdn.example.com/products/nike-tech-fleece-black/back.jpg",
+    "https://cdn.example.com/products/nike-tech-fleece-black/pocket.jpg",
+    "https://cdn.example.com/products/nike-tech-fleece-black/tag.jpg"
+  ],
+  "highlights": [
+    "Double-sided Tech Fleece fabric",
+    "Lightweight warmth without bulk",
+    "Zippered utility sleeve pocket",
+    "Adjustable hood with bonded trim",
+    "Relaxed fit with dropped shoulders"
+  ],
+  "specification": [
+    {
+      "section": "Material & Fit",
+      "features": [
+        { "name": "Fabric", "value": "66% Cotton, 34% Polyester" },
+        { "name": "Fit", "value": "Relaxed / Oversized" },
+        { "name": "Weight", "value": "Lightweight (400gsm)" }
+      ]
+    },
+    {
+      "section": "Sizing",
+      "features": [
+        { "name": "Available Sizes", "value": "XS, S, M, L, XL, XXL" },
+        { "name": "Model Size", "value": "Height 6'1\" wearing size M" }
+      ]
+    },
+    {
+      "section": "Care",
+      "features": [
+        { "name": "Machine Wash", "value": "Cold, gentle cycle" },
+        { "name": "Dryer", "value": "Low heat / tumble dry" },
+        { "name": "Ironing", "value": "Do not iron print" }
+      ]
+    }
+  ]
+},
+{
+  "name": "Adidas Ultraboost 22 Running Shoes",
+  "brand_name": "Adidas",
+  "model_no": "GX5459-BLK-2024",
+  "description": "Engineered for long-distance runners, the Ultraboost 22 features a Linear Energy Push system, a BOOST midsole for unmatched energy return, and a Primeknit+ upper that adapts to your foot's shape for a sock-like fit.",
+  "warrenty": "6 Months Adidas Warranty",
+  "discount_percent": 20.0,
+  "stock_quantity": 200,
+  "is_active": true,
+  "price": 189.99,
+  "image_url": "https://cdn.example.com/products/ultraboost-22-black/main.jpg",
+  "category_id": 6,
+  "additional_images": [
+    "https://cdn.example.com/products/ultraboost-22-black/side.jpg",
+    "https://cdn.example.com/products/ultraboost-22-black/sole.jpg",
+    "https://cdn.example.com/products/ultraboost-22-black/heel.jpg"
+  ],
+  "highlights": [
+    "BOOST midsole for high energy return",
+    "Linear Energy Push (LEP) system",
+    "Primeknit+ adaptive upper",
+    "Continental™ Better Rubber outsole",
+    "Made in part with recycled materials"
+  ],
+  "specification": [
+    {
+      "section": "Design",
+      "features": [
+        { "name": "Upper", "value": "Primeknit+ (recycled yarn)" },
+        { "name": "Midsole", "value": "BOOST + LEP torsion system" },
+        { "name": "Outsole", "value": "Continental™ Better Rubber" },
+        { "name": "Drop", "value": "10mm (heel-to-toe)" }
+      ]
+    },
+    {
+      "section": "Performance",
+      "features": [
+        { "name": "Weight", "value": "310g (size UK 8.5)" },
+        { "name": "Best For", "value": "Road running, long-distance" },
+        { "name": "Arch Support", "value": "Neutral" }
+      ]
+    },
+    {
+      "section": "Sizing & Care",
+      "features": [
+        { "name": "Available Sizes", "value": "UK 6 to UK 13" },
+        { "name": "Fit", "value": "True to size (snug fit)" },
+        { "name": "Care", "value": "Hand wash, air dry" }
+      ]
+    }
+  ]
+},
+{
+  "name": "Sony WH-1000XM5 Wireless Headphones",
+  "brand_name": "Sony",
+  "model_no": "WH1000XM5-BLK-2024",
+  "description": "Industry-leading noise cancellation with two processors and eight microphones. Enjoy up to 30 hours of battery life, Hi-Res Audio via LDAC, and premium comfort with a soft-fit leather headband — perfect for travel, work, and daily listening.",
+  "warrenty": "1 Year Sony Warranty",
+  "discount_percent": 15.0,
+  "stock_quantity": 90,
+  "is_active": true,
+  "price": 399.99,
+  "image_url": "https://cdn.example.com/products/wh-1000xm5-black/main.jpg",
+  "category_id": 7,
+  "additional_images": [
+    "https://cdn.example.com/products/wh-1000xm5-black/folded.jpg",
+    "https://cdn.example.com/products/wh-1000xm5-black/earcup.jpg",
+    "https://cdn.example.com/products/wh-1000xm5-black/case.jpg"
+  ],
+  "highlights": [
+    "Industry-leading noise cancellation",
+    "30-hour battery life (3 min = 3 hrs)",
+    "Hi-Res Audio with LDAC support",
+    "Multipoint Bluetooth pairing",
+    "Speak-to-Chat and Quick Attention"
+  ],
+  "specification": [
+    {
+      "section": "Audio",
+      "features": [
+        { "name": "Driver", "value": "30mm carbon fiber composite" },
+        { "name": "Frequency Response", "value": "4Hz – 40,000Hz" },
+        { "name": "Codecs", "value": "SBC, AAC, LDAC" },
+        { "name": "Noise Cancellation", "value": "Dual processor, 8-mic array" }
+      ]
+    },
+    {
+      "section": "Battery & Charging",
+      "features": [
+        { "name": "Playback Time", "value": "Up to 30 hours (ANC on)" },
+        { "name": "Quick Charge", "value": "3 min = 3 hours playback" },
+        { "name": "Charging Port", "value": "USB-C" }
+      ]
+    },
+    {
+      "section": "Connectivity",
+      "features": [
+        { "name": "Bluetooth", "value": "5.2, multipoint" },
+        { "name": "Wired", "value": "3.5mm aux + USB-C audio" },
+        { "name": "App Support", "value": "Sony Headphones Connect" },
+        { "name": "Weight", "value": "250g" }
+      ]
+    }
+  ]
+},
+{
+  "name": "Apple Watch Ultra 2 Titanium",
+  "brand_name": "Apple",
+  "model_no": "MX4H3LL/A-49MM-2024",
+  "description": "The most rugged and capable Apple Watch — built for endurance athletes, outdoor adventurers, and divers. Features a 49mm titanium case, the brightest display Apple has ever made, and precision dual-frequency GPS.",
+  "warrenty": "1 Year AppleCare Limited Warranty",
+  "discount_percent": 5.0,
+  "stock_quantity": 70,
+  "is_active": true,
+  "price": 799.00,
+  "image_url": "https://cdn.example.com/products/apple-watch-ultra-2/main.jpg",
+  "category_id": 8,
+  "additional_images": [
+    "https://cdn.example.com/products/apple-watch-ultra-2/side.jpg",
+    "https://cdn.example.com/products/apple-watch-ultra-2/back.jpg",
+    "https://cdn.example.com/products/apple-watch-ultra-2/band.jpg"
+  ],
+  "highlights": [
+    "Aerospace-grade titanium case (49mm)",
+    "Brightest Retina display (3000 nits)",
+    "Precision dual-frequency GPS",
+    "100m water resistance (EN13319)",
+    "Up to 36 hours battery life"
+  ],
+  "specification": [
+    {
+      "section": "Display & Build",
+      "features": [
+        { "name": "Display Size", "value": "49mm Always-On Retina" },
+        { "name": "Brightness", "value": "3000 nits peak" },
+        { "name": "Case Material", "value": "Grade 5 Titanium" },
+        { "name": "Water Resistance", "value": "100m / EN13319 dive rated" }
+      ]
+    },
+    {
+      "section": "Health & Sensors",
+      "features": [
+        { "name": "Heart Rate", "value": "3rd-gen optical sensor" },
+        { "name": "ECG", "value": "Yes" },
+        { "name": "Blood Oxygen", "value": "Yes" },
+        { "name": "Temperature Sensor", "value": "Wrist temperature tracking" }
+      ]
+    },
+    {
+      "section": "Battery & Connectivity",
+      "features": [
+        { "name": "Battery Life", "value": "36 hours (72 hrs low power)" },
+        { "name": "GPS", "value": "L1 + L5 dual-frequency" },
+        { "name": "Cellular", "value": "Optional LTE variant" },
+        { "name": "Connectivity", "value": "Wi-Fi 4, Bluetooth 5.3, UWB" }
+      ]
+    }
+  ]
+}
+
+]
