@@ -1,0 +1,62 @@
+
+from app.modules.cart.model import CartItem
+from sqlalchemy.orm import Session
+from sqlalchemy import select
+from app.modules.order.model import Order, OrderItem
+from app.modules.users.model import User
+from app.modules.cart.model import Cart
+
+class OrderRepository:
+  def __init__(self, db: Session) -> None:
+    self.db = db
+
+  def get_by_id(self, order_id: int) -> Order | None:
+    return self.db(Order, order_id)
+
+  def get_user_id(self, user_id: int) -> list[Order]:
+    statement = (
+      select(Order)
+      .where(Order.user_id == user_id)
+      .order_by(Order.od.desc())
+    )
+
+    return self.db.scalars(statement).all()
+
+  def get_all(self) -> list[Order]:
+    statement = select(Order).order_by(Order.id.desc())
+    return self.db.scalars(statement).all()
+
+  def get_items_by_order_id(self, order_id:int)-> list[OrderItem]:
+    statement = (
+      select(OrderItem)
+      .where(OrderItem.order_id == order_id)
+      .order_by(OrderItem.id.asc())
+    )
+
+    return self.db.scalars(statement).all()
+
+  def place_order(
+    self,
+    order: Order,
+    order_items: list[OrderItem],
+    cart_items: list[CartItem] 
+  ):
+    self.db.add(order)
+
+    self.db.flush()
+
+    for item in order_items:
+      item.order_id = order.id
+      self.db.add(order_items)
+    
+    for item in cart_items:
+      self.db.delete(item)
+    
+    self.db.commit()
+    self.db.refresh()
+    return order
+
+def update(self, order: Order) -> Order:
+  self.db.commit()
+  self.db.refresh(order)
+  return order
