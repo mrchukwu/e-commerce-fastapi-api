@@ -11,13 +11,13 @@ class OrderRepository:
     self.db = db
 
   def get_by_id(self, order_id: int) -> Order | None:
-    return self.db(Order, order_id)
+    return self.db.get(Order, order_id)
 
-  def get_user_id(self, user_id: int) -> list[Order]:
+  def get_by_user_id(self, user_id: int) -> list[Order]:
     statement = (
       select(Order)
       .where(Order.user_id == user_id)
-      .order_by(Order.od.desc())
+      .order_by(Order.id.desc())
     )
 
     return self.db.scalars(statement).all()
@@ -47,16 +47,16 @@ class OrderRepository:
 
     for item in order_items:
       item.order_id = order.id
-      self.db.add(order_items)
+      self.db.add(item)
     
     for item in cart_items:
       self.db.delete(item)
     
     self.db.commit()
-    self.db.refresh()
+    self.db.refresh(order)
     return order
 
-def update(self, order: Order) -> Order:
-  self.db.commit()
-  self.db.refresh(order)
-  return order
+  def update(self, order: Order) -> Order:
+    self.db.commit()
+    self.db.refresh(order)
+    return order

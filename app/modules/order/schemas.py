@@ -1,5 +1,4 @@
 
-from dns.message import QUESTION
 from pydantic import BaseModel
 from enum import Enum
 
@@ -28,7 +27,7 @@ class OrderItemRead(BaseModel):
   subtotal: float
 
   class Config:
-    from_attribute = True
+    from_attributes = True
   
 
 class PlaceOrderRequest(BaseModel):

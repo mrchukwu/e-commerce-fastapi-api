@@ -17,4 +17,4 @@ api_router.include_router(category_router, prefix="/categories", tags=["Categori
 api_router.include_router(product_router, prefix="/products", tags=["Products"])
 api_router.include_router(cart_router, prefix="/carts", tags=["Carts"])
 api_router.include_router(address_router, prefix="/addresses", tags=["Addresses"])
-api_router.include_router(order_router, prefix="/orders", tags=["Order"])
+api_router.include_router(order_router, prefix="/orders", tags=["Orders"])
