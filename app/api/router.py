@@ -5,6 +5,7 @@ from app.modules.auth.router import router as auth_router
 from app.modules.cart.router import router as cart_router
 from app.modules.category.router import router as category_router
 from app.modules.order.router import router as order_router
+from app.modules.payment.router import router as payment_router
 from app.modules.products.router import router as product_router
 from app.modules.users.router import router as user_router
 
@@ -18,3 +19,4 @@ api_router.include_router(product_router, prefix="/products", tags=["Products"])
 api_router.include_router(cart_router, prefix="/carts", tags=["Carts"])
 api_router.include_router(address_router, prefix="/addresses", tags=["Addresses"])
 api_router.include_router(order_router, prefix="/orders", tags=["Orders"])
+api_router.include_router(payment_router, prefix="/payments", tags=["Payment"])

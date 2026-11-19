@@ -11,9 +11,9 @@ class PaymentRepository:
         self.db = db
 
     def create(self, payment: Payment) -> Payment:
-        self.add(payment)
+        self.db.add(payment)
         self.db.commit()
-        self.db.refresh()
+        self.db.refresh(payment)
         return payment
 
     def update(self, payment: Payment) -> Payment:

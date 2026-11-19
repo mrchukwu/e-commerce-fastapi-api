@@ -16,27 +16,33 @@ class PaymentService:
         self.orderRepository = OrderRepository(db)
         self.paymentRepository = PaymentRepository(db)
 
-    def _get_owned_oder(self, order_id: int, current_user: User):
+    def _get_owned_order(self, order_id: int, current_user: User):
         order = self.orderRepository.get_by_id(order_id)
 
+        # 1. Order must exist
         if order is None:
             raise HTTPException(
-                status_code=status.HTTP_404_NOT_Found, detail="order not found"
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Order not found",
             )
 
+        # 2. Order must belong to this user (or user is admin)
         if (
             order.user_id != current_user.id
             and current_user.role != UserRole.ADMIN.value
         ):
             raise HTTPException(
-                status_code=status.HTTP_403_FORBIDDEN, detail="access denied"
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="Access denied",
             )
-            return order
+        # 3. ✅ Return OUTSIDE the if blocks — was missing before
+        return order
 
     def create_payment(
         self, current_user: User, payload: CreatePaymentLinkequest
     ) -> PaymentLinkResponse:
-        order = self._get_owned_oder(payload.order_id, current_user)
+        order = self._get_owned_order(payload.order_id, current_user)
+
 
         if order.status != OrderStatus.PENDING.value:
             raise HTTPException(
@@ -60,7 +66,7 @@ class PaymentService:
                 provider=payload.provider,
                 amount=existing_payment.amount,
                 currency=existing_payment.currency,
-                payment_link=existing_payment.currency,
+                payment_link=existing_payment.payment_link_url,
                 provider_payment_link_id=existing_payment.provider_payment_link_id,
             )
 
@@ -69,19 +75,19 @@ class PaymentService:
             user_id=current_user.id,
             provider=payload.provider.value,
             amount=order.total_amount,
-            currency="NIG",
+            currency="NGN",
             status=PaymentStatus.PENDING.value,
-            payment_link="dummy link",
-            provider_payment_link_id="dummy payment link id",
+            payment_link="dummy_link",
+            provider_payment_link_id="dummy_payment_link_id",
         )
 
         db_payment = self.paymentRepository.create(payment)
 
         return PaymentLinkResponse(
           order_id=order.id,
-          procider = payload.provider,
+          provider = payload.provider,
           amount=db_payment.amount,
-          curency=db_payment.currency,
+          currency=db_payment.currency,
           payment_link=db_payment.payment_link_url,
           provider_payment_link_id=db_payment.provider_payment_link_id
         )
