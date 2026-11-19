@@ -30,7 +30,7 @@ class OrderService:
 
         order_read = OrderRead(
             id=order.id,
-            user_id=order.user.id,
+            user_id=order.user_id,
             shipping_address_id=order.shipping_address_id,
             total_items=order.total_items,
             total_amount=order.total_amount,

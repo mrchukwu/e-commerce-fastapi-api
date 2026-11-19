@@ -1,10 +1,12 @@
 from fastapi import FastAPI
 
 from app.api.router import api_router
+from app.database import model_registry
 from app.database.base import Base
 from app.database.session import SessionLocal, engine
 from app.modules.users.service import UserService
 
+# from app.modules.order.router import router as order_router
 app = FastAPI(
   title = "Electronics Ecommerce Project",
   description = "API for managing ecommerce website",
@@ -22,3 +24,4 @@ def home():
 
 
 app.include_router(api_router, prefix="/api/v1")
+# app.include_router(order_router, prefix="/api/v1/orders", tags=["Orders"])

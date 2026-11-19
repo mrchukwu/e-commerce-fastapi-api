@@ -1,10 +1,10 @@
 
-from app.modules.cart.model import CartItem
-from sqlalchemy.orm import Session
 from sqlalchemy import select
+from sqlalchemy.orm import Session
+
+from app.modules.cart.model import CartItem
 from app.modules.order.model import Order, OrderItem
-from app.modules.users.model import User
-from app.modules.cart.model import Cart
+
 
 class OrderRepository:
   def __init__(self, db: Session) -> None:
